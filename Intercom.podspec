@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.library             = "icucore", "xml2"
   s.requires_arc        = true
   s.source              = { :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s }
-  s.platform            = :ios, '13.0'
+  s.platform            = :ios, '11.0'
   s.preserve_paths      = 'Intercom.xcframework'
   s.xcconfig = {
     'FRAMEWORK_SEARCH_PATH[sdk=iphoneos13.0]' => '$(inherited) "$(PODS_ROOT)/Intercom"',
