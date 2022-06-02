@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.preserve_paths      = 'Intercom.xcframework'
   s.xcconfig = {
-    'FRAMEWORK_SEARCH_PATH[sdk=iphoneos*]' => '$(inherited) "$(PODS_ROOT)/Intercom"',
-    'OTHERCFLAGS[sdk=iphoneos*]' => '$(inherited) -iframework "$(PODS_ROOT)/Intercom"',
-    'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -framework Intercom'
+    'FRAMEWORK_SEARCH_PATH[sdk=iphoneos13.0]' => '$(inherited) "$(PODS_ROOT)/Intercom"',
+    'OTHERCFLAGS[sdk=iphoneos13.0]' => '$(inherited) -iframework "$(PODS_ROOT)/Intercom"',
+    'OTHER_LDFLAGS[sdk=iphoneos13.0]' => '$(inherited) -framework Intercom'
   }
 end
