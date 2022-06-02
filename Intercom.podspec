@@ -12,9 +12,5 @@ Pod::Spec.new do |s|
   s.source              = { :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s }
   s.platform            = :ios, '11.0'
   s.preserve_paths      = 'Intercom.xcframework'
-  s.xcconfig = {
-    'FRAMEWORK_SEARCH_PATH[sdk=iphoneos13.0]' => '$(inherited) "$(PODS_ROOT)/Intercom"',
-    'OTHERCFLAGS[sdk=iphoneos13.0]' => '$(inherited) -iframework "$(PODS_ROOT)/Intercom"',
-    'OTHER_LDFLAGS[sdk=iphoneos13.0]' => '$(inherited) -framework Intercom'
-  }
+  s.vendored_frameworks = 'Intercom.xcframework'
 end
